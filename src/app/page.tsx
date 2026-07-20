@@ -1,10 +1,10 @@
 export default function Home() {
     return (
-        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div className="relative z-10 mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div className="lg:flex lg:justify-between lg:gap-4">
                 {/* Left Side: Header & Navigation */}
                 <header
-                    className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+                    className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-2/5 lg:translate-x-20 lg:flex-col lg:justify-between lg:py-24">
                     <div>
                         <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl drop-shadow-[0_0_10px_rgba(203,213,225,0.3)]">
                             Bob Xin
@@ -64,7 +64,7 @@ export default function Home() {
                 </header>
 
                 {/* Right Side: Scrollable Content */}
-                <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
+                <main id="content" className="pt-24 lg:w-3/5 lg:translate-x-20 lg:py-24">
 
                     <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                              aria-label="About me">
@@ -97,8 +97,8 @@ export default function Home() {
                     <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                              aria-label="Work experience">
                         <div
-                            className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                            <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+                            className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-0 lg:w-full lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
+                            <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">Experience</h2>
                         </div>
 
                         <div>
@@ -107,14 +107,14 @@ export default function Home() {
                                 {/* Experience 1 */}
                                 <li className="mb-12">
                                     <div
-                                        className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                        className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                         <div
                                             className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_15px_rgba(45,212,191,0.15)] lg:group-hover:drop-shadow-lg"></div>
                                         <header
-                                            className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                            className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
                                             aria-label="2021 to Present">Jan 2021 — Present
                                         </header>
-                                        <div className="z-10 sm:col-span-6">
+                                        <div className="z-10">
                                             <h3 className="font-medium leading-snug text-slate-200">
                                                 <div>
                                                     <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
@@ -168,14 +168,14 @@ export default function Home() {
                                 {/* Experience 2 */}
                                 <li className="mb-12">
                                     <div
-                                        className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                        className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                         <div
                                             className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_15px_rgba(45,212,191,0.15)] lg:group-hover:drop-shadow-lg"></div>
                                         <header
-                                            className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                            className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
                                             aria-label="2018 to 2020">Jun 2018 — Dec 2020
                                         </header>
-                                        <div className="z-10 sm:col-span-6">
+                                        <div className="z-10">
                                             <h3 className="font-medium leading-snug text-slate-200">
                                                 <div>
                                                     <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
@@ -232,19 +232,19 @@ export default function Home() {
                              aria-label="Education">
 
                         <div
-                            className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                            <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Education</h2>
+                            className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-0 lg:w-full lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none">
+                            <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">Education</h2>
                         </div>
 
                         {/* Education 1 */}
-                        <li className="mb-5">
+                        <li className="mb-10 list-none">
                             <div
-                                className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <header
-                                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
                                     aria-label="2014 to 2018">Sep 2024 — Jun 2026
                                 </header>
-                                <div className="z-10 sm:col-span-6">
+                                <div className="z-10">
                                     <h3 className="font-medium leading-snug text-slate-200">
                                         Master of Engineering Management
                                     </h3>
@@ -256,14 +256,14 @@ export default function Home() {
                         </li>
 
                         {/* Education 2 */}
-                        <li className="mb-5">
+                        <li className="mb-10 list-none">
                             <div
-                                className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <header
-                                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
                                     aria-label="2024 to 2026">Sep 2024 — Jun 2026
                                 </header>
-                                <div className="z-10 sm:col-span-6">
+                                <div className="z-10">
                                     <h3 className="font-medium leading-snug text-slate-200">
                                         Computer of Science
                                     </h3>
@@ -275,14 +275,14 @@ export default function Home() {
                         </li>
 
                         {/* Education 3 */}
-                        <li className="mb-5">
+                        <li className="mb-10 list-none">
                             <div
-                                className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <header
-                                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                                    className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
                                     aria-label="2014 to 2018">Sep 2024 — Jun 2026
                                 </header>
-                                <div className="z-10 sm:col-span-6">
+                                <div className="z-10">
                                     <h3 className="font-medium leading-snug text-slate-200">
                                         Bachelor of Business Administration
                                     </h3>

@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
-import CursorGlow from "@/components/CursorGlow";
+import CursorGlow from "../components/CursorGlow";
 import "./globals.css";
 
 const inter = Inter({subsets: ["latin"]});

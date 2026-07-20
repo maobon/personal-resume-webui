@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.cursor-glow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.cursor-glow[data-visible="true"] {
+    opacity: 1;
+}
