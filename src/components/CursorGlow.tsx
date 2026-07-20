@@ -2,8 +2,8 @@
 
 import {useEffect, useRef} from "react";
 
-const DOT_GAP = 24;
-const GLOW_RADIUS = 340;
+const DOT_GAP = 10;
+const GLOW_RADIUS = 750;
 
 export default function CursorGlow() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -17,6 +17,7 @@ export default function CursorGlow() {
         }
 
         let frameId = 0;
+        let time = 0;
         let width = window.innerWidth;
         let height = window.innerHeight;
         let currentX = width / 2;
@@ -37,8 +38,9 @@ export default function CursorGlow() {
         };
 
         const draw = () => {
-            currentX += (targetX - currentX) * 0.18;
-            currentY += (targetY - currentY) * 0.18;
+            time += 0.02;
+            currentX += (targetX - currentX) * 0.12;
+            currentY += (targetY - currentY) * 0.12;
 
             context.clearRect(0, 0, width, height);
 
@@ -48,10 +50,10 @@ export default function CursorGlow() {
                 0,
                 currentX,
                 currentY,
-                GLOW_RADIUS * 1.45,
+                GLOW_RADIUS * 1.2,
             );
-            glow.addColorStop(0, "rgb(29 78 216 / 0.16)");
-            glow.addColorStop(0.45, "rgb(29 78 216 / 0.07)");
+            glow.addColorStop(0, "rgba(255, 255, 255, 0.05)");
+            glow.addColorStop(0.4, "rgba(255, 255, 255, 0.01)");
             glow.addColorStop(1, "transparent");
             context.fillStyle = glow;
             context.fillRect(0, 0, width, height);
@@ -70,11 +72,23 @@ export default function CursorGlow() {
                     }
 
                     const strength = 1 - distance / GLOW_RADIUS;
-                    const variation = 0.45 + Math.abs(Math.sin(x * 12.9898 + y * 78.233)) * 0.55;
-                    const alpha = strength * strength * variation * 0.82;
-                    const dotSize = 1.5 + strength * variation * 1.5;
 
-                    context.fillStyle = `rgb(148 163 184 / ${alpha})`;
+                    // Create a unique seed for each star based on its coordinates
+                    const seed = (x * 12.9898 + y * 78.233);
+                    const randomFactor = Math.abs(Math.sin(seed)) * 0.5 + 0.5;
+
+                    // Per-star independent twinkling
+                    // We use the seed to give each star a different speed and phase
+                    const twinkleSpeed = 2.5 + (Math.sin(seed * 0.001) * 1.5);
+                    const twinkle = Math.sin(time * twinkleSpeed + seed) * 0.5 + 0.5;
+
+                    // Add "shimmer" - occasional brighter bursts
+                    const shimmer = Math.pow(Math.max(0, Math.sin(time * 0.8 + seed * 2)), 7) * 0.7;
+
+                    const alpha = Math.pow(strength, 3.2) * (twinkle + shimmer) * randomFactor * 1.0;
+                    const dotSize = 0.5 + (strength * randomFactor * 0.5);
+
+                    context.fillStyle = `rgba(255, 255, 255, ${alpha})`;
                     context.fillRect(x - dotSize / 2, y - dotSize / 2, dotSize, dotSize);
                 }
             }
