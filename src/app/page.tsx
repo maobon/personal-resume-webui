@@ -260,7 +260,7 @@ export default function Home() {
                                 className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <header
                                     className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
-                                    aria-label="2024 to 2026">Sep 2024 — Jun 2026
+                                    aria-label="2024 to 2026">Feb 2020 — Jun 2022
                                 </header>
                                 <div className="z-10">
                                     <h3 className="font-medium leading-snug text-slate-200">
@@ -279,14 +279,14 @@ export default function Home() {
                                 className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <header
                                     className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
-                                    aria-label="2014 to 2018">Sep 2024 — Jun 2026
+                                    aria-label="2014 to 2018">Sep 2007 — Jun 2011
                                 </header>
                                 <div className="z-10">
                                     <h3 className="font-medium leading-snug text-slate-200">
-                                        Bachelor of Business Administration
+                                        Bachelor of Business Administration & Financial Management
                                     </h3>
                                     <p className="mt-2 text-sm leading-normal">
-                                        Tech of Tianjin University
+                                        Southern Cross University & Tianjin University of Science and Technology
                                     </p>
                                 </div>
                             </div>
