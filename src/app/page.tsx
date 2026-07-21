@@ -88,8 +88,7 @@ export default function Home() {
                                 className="font-medium text-slate-200">performance</span>.
                             </p>
                             <p>
-                                When I'm not coding, I'm usually exploring the outdoors, reading sci-fi, or trying out
-                                new coffee shops in San Francisco.
+                                非常的无奈
                             </p>
                         </div>
                     </section>
