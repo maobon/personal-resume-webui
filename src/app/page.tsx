@@ -88,7 +88,7 @@ export default function Home() {
                                 className="font-medium text-slate-200">performance</span>.
                             </p>
                             <p>
-                                非常的无奈
+                                非常的无奈, 居然也是自动化部署的??
                             </p>
                         </div>
                     </section>
