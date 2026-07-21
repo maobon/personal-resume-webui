@@ -1,6 +1,7 @@
 export default function Home() {
     return (
-        <div className="relative z-10 mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+        <div
+            className="relative z-10 mx-auto min-h-screen max-w-screen-2xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div className="lg:flex lg:justify-between lg:gap-4">
                 {/* Left Side: Header & Navigation */}
                 <header
@@ -121,13 +122,18 @@ export default function Home() {
                                                        aria-label="Senior Software Engineer at Tech Innovators Inc.">
                                                         <span
                                                             className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                        <span>Software Engineer · <span className="inline-block">Tech Innovators Inc.<svg
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                            fill="currentColor"
-                                                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                                            aria-hidden="true"><path fillRule="evenodd"
-                                                                                     d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                                                                     clipRule="evenodd"></path></svg></span></span>
+                                                        <span>Freelancer · Software Engineer<span
+                                                            className="inline-block">
+                                                            Jialidun Tech Innovators Inc.
+                                                            <svg
+                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                                fill="currentColor"
+                                                                className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                aria-hidden="true">
+                                                                <path fillRule="evenodd"
+                                                                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                      clipRule="evenodd"></path>
+                                                            </svg></span></span>
                                                     </a>
                                                 </div>
                                             </h3>
@@ -136,6 +142,7 @@ export default function Home() {
                                                 micro-frontend architecture using Next.js, improving page load times by
                                                 40%. Mentored junior engineers and collaborated with design teams to
                                                 implement accessible and responsive user interfaces.
+                                                还能说什么 他么的 ....
                                             </p>
                                             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                                 <li className="mr-1.5 mt-2">
