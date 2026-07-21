@@ -111,7 +111,7 @@ export default function Home() {
                                             className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_15px_rgba(45,212,191,0.15)] lg:group-hover:drop-shadow-lg"></div>
                                         <header
                                             className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
-                                            aria-label="2021 to Present">Jan 2021 — Present
+                                            aria-label="2021 to Present">Aug 2017 — Aug 2022
                                         </header>
                                         <div className="z-10">
                                             <h3 className="font-medium leading-snug text-slate-200">
@@ -121,7 +121,7 @@ export default function Home() {
                                                        aria-label="Senior Software Engineer at Tech Innovators Inc.">
                                                         <span
                                                             className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                                        <span>Senior Software Engineer · <span className="inline-block">Tech Innovators Inc.<svg
+                                                        <span>Software Engineer · <span className="inline-block">Tech Innovators Inc.<svg
                                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                             fill="currentColor"
                                                             className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
@@ -140,23 +140,17 @@ export default function Home() {
                                             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                                 <li className="mr-1.5 mt-2">
                                                     <div
-                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Android
                                                     </div>
                                                 </li>
                                                 <li className="mr-1.5 mt-2">
                                                     <div
-                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Next.js
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Java
                                                     </div>
                                                 </li>
                                                 <li className="mr-1.5 mt-2">
                                                     <div
-                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript
-                                                    </div>
-                                                </li>
-                                                <li className="mr-1.5 mt-2">
-                                                    <div
-                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Tailwind
-                                                        CSS
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Kotlin
                                                     </div>
                                                 </li>
                                             </ul>
@@ -165,6 +159,61 @@ export default function Home() {
                                 </li>
 
                                 {/* Experience 2 */}
+                                <li className="mb-12">
+                                    <div
+                                        className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                        <div
+                                            className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[0_0_15px_rgba(45,212,191,0.15)] lg:group-hover:drop-shadow-lg"></div>
+                                        <header
+                                            className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:whitespace-nowrap"
+                                            aria-label="2021 to Present">Aug 2017 — Aug 2022
+                                        </header>
+                                        <div className="z-10">
+                                            <h3 className="font-medium leading-snug text-slate-200">
+                                                <div>
+                                                    <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                       href="#" target="_blank" rel="noreferrer"
+                                                       aria-label="Senior Software Engineer at Tech Innovators Inc.">
+                                                        <span
+                                                            className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                                                        <span>Software Engineer · <span className="inline-block">Tech Innovators Inc.<svg
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                            fill="currentColor"
+                                                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                            aria-hidden="true"><path fillRule="evenodd"
+                                                                                     d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                                     clipRule="evenodd"></path></svg></span></span>
+                                                    </a>
+                                                </div>
+                                            </h3>
+                                            <p className="mt-2 text-sm leading-normal">
+                                                Led the frontend migration from a monolithic application to a
+                                                micro-frontend architecture using Next.js, improving page load times by
+                                                40%. Mentored junior engineers and collaborated with design teams to
+                                                implement accessible and responsive user interfaces.
+                                            </p>
+                                            <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                <li className="mr-1.5 mt-2">
+                                                    <div
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Android
+                                                    </div>
+                                                </li>
+                                                <li className="mr-1.5 mt-2">
+                                                    <div
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Java
+                                                    </div>
+                                                </li>
+                                                <li className="mr-1.5 mt-2">
+                                                    <div
+                                                        className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Kotlin
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                {/* Experience 3 */}
                                 <li className="mb-12">
                                     <div
                                         className="group relative grid pb-1 transition-all sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-8 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
